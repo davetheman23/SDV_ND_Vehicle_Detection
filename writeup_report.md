@@ -103,8 +103,6 @@ Here are some example images:
 
 My video is very bad, and I have a lot of false positives, I am not sure why this is the case. The SVM training seems to be reasonably good, having achieved 0.99 on the test dataset. 
 
-Please help. 
-
 Here's a [link to my video result](./output_videos/project_video.mp4)
 
 
@@ -129,7 +127,9 @@ Here's an example result showing the heatmap from a series of frames of video, t
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-I am having trouble getting a good performance on the video. I will keep working on it, please help me on identifying the issue. Thanks. 
+The main problem is that the classifier still produce a lot of false positives despite the use of heatmap, label and thresholding techniques. 
+
+Need to implement vehicle tracking to use history of the detections to inform current detection. 
 
 
 ### Appendix-A 
